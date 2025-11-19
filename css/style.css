@@ -440,7 +440,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/img/heroimage1.png') no-repeat center center;
+    background: url('img/heroimage1.png') no-repeat center center;
     background-size: cover;
 }
 
@@ -1111,7 +1111,7 @@ body.dark .plan-header small { color: rgba(255,255,255,0.85); }
 /* Contact Form */
 
 .contact-header-section{
-    background-image: url('/img/contact-header.jpg');
+    background-image: url('img/contact-header.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1371,7 +1371,7 @@ body.dark .plan-header small { color: rgba(255,255,255,0.85); }
 
 /* coverage plan sections */
 .basic-coverage-plan-section {
-    background-image: url('/img/basic-coverage.jpg');
+    background-image: url('img/basic-coverage.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1384,7 +1384,7 @@ body.dark .plan-header small { color: rgba(255,255,255,0.85); }
 }
 
 .premium-coverage-plan-section {
-    background-image: url('/img/premium-coverage.jpg');
+    background-image: url('img/premium-coverage.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1396,7 +1396,7 @@ body.dark .plan-header small { color: rgba(255,255,255,0.85); }
 }
 
 .luxury-coverage-plan-section {
-    background-image: url('/img/luxury-coverage.jpg');
+    background-image: url('img/luxury-coverage.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1447,7 +1447,7 @@ body.dark .plan-header small { color: rgba(255,255,255,0.85); }
 
 /* faq section */
 .faq-header-section{
-    background-image: url('/img/faq-header.jpg');
+    background-image: url('img/faq-header.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1459,7 +1459,7 @@ body.dark .plan-header small { color: rgba(255,255,255,0.85); }
 }
 /* about us section */
 .about-header-section{
-    background-image: url('/img/about-header.jpg');
+    background-image: url('img/about-header.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
