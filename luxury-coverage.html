@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Plans - Safe Carz Limited
+    </title>
+    <meta name="description"
+        content="Compare car insurance plans from top providers. Find the perfect coverage for your vehicle at competitive rates.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <div class="loader"></div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <!-- Logo and Brand -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="brand-logo">
+                    <img src="img/logo-Photoroom.png" alt="Safe Carz Limited Logo">
+                </div>
+                <span class="brand-name ms-2">
+                    Safe Carz Limited
+                </span>
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="basic-coverage.html">Basic Coverage</a></li>
+                            <li><a class="dropdown-item" href="premium-coverage.html">Premium Coverage</a></li>
+                            <li><a class="dropdown-item" href="luxury-coverage.html">Luxury Coverage</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn-login btn-primary" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="luxury-coverage-plan-section py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">Luxury Insurance Plans</h1>
+                    <p class="card-title">Compare luxury plans from top insurance providers and find the perfect
+                        coverage for your
+                        vehicle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-3 text-center">Filter Plans</h5>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="card-text form-label">Filter by Company</label>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <button class="filter-btn active" data-filter="all">All Companies</button>
+                                            <button class="filter-btn"
+                                                data-filter="SecureDrive Insurance">SecureDrive</button>
+                                            <button class="filter-btn" data-filter="AutoGuard Plus">AutoGuard</button>
+                                            <button class="filter-btn"
+                                                data-filter="RoadSafe Insurance">RoadSafe</button>
+                                            <button class="filter-btn"
+                                                data-filter="ShieldAuto Coverage">ShieldAuto</button>
+                                            <button class="filter-btn"
+                                                data-filter="DriveSure Protection">DriveSure</button>
+                                            <button class="filter-btn"
+                                                data-filter="MotorTrust Insurance">MotorTrust</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Filter by Vehicle Type</label>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <button class="filter-btn active" data-filter="all">All Types</button>
+                                            <button class="filter-btn" data-filter="two-wheeler">2-Wheelers</button>
+                                            <button class="filter-btn" data-filter="four-wheeler">4-Wheelers</button>
+                                            <button class="filter-btn" data-filter="commercial">Commercial</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Plans -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="plansContainer">
+                <!-- LUXURY COVERAGE – Iteration 3 (All Plans) -->
+
+                <!-- Plan 1 -->
+                <div class="col-md-6 col-lg-4 plan-card" data-company="SecureDrive Insurance"
+                    data-category="four-wheeler">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="plan-header bg-dark text-white">
+                            <h5 class="card-title mb-1">SecureDrive Insurance</h5>
+                            <small>Luxury Elite Coverage</small>
+                        </div>
+                        <div class="plan-body">
+                            <div class="plan-price">PKR 120,000<span class="text-muted">/year</span></div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-crown text-warning me-2"></i>Liability: PKR 3,000,000</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Zero Depreciation</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Full Accident + Theft Coverage</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Premium Personal Injury Protection
+                                </li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>VIP Roadside Assistance (Unlimited)
+                                </li>
+                            </ul>
+                            <button class="btn btn-dark w-100">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="col-md-6 col-lg-4 plan-card" data-company="AutoGuard Plus" data-category="four-wheeler">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="plan-header bg-accent-orange text-white">
+                            <h5 class="card-title mb-1">AutoGuard Plus</h5>
+                            <small>Luxury Premium Coverage</small>
+                        </div>
+                        <div class="plan-body">
+                            <div class="plan-price">PKR 95,000<span class="text-muted">/year</span></div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-crown text-warning me-2"></i>Liability: PKR 2,200,000</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Zero Deductible Protection</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Comprehensive Elite Coverage</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Premium Personal Injury Support</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Elite Roadside Network</li>
+                            </ul>
+                            <button class="btn btn-dark w-100">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="col-md-6 col-lg-4 plan-card" data-company="RoadSafe Insurance" data-category="two-wheeler">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="plan-header bg-dark text-white">
+                            <h5 class="card-title mb-1">RoadSafe Insurance</h5>
+                            <small>Luxury Motorcycle Coverage</small>
+                        </div>
+                        <div class="plan-body">
+                            <div class="plan-price">PKR 32,000<span class="text-muted">/year</span></div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-crown text-warning me-2"></i>Liability: PKR 400,000</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Full Theft + Damage Protection</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Gear + Helmet Coverage</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Premium Accident Shield</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Exclusive Roadside Priority</li>
+                            </ul>
+                            <button class="btn btn-dark w-100">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 4 -->
+                <div class="col-md-6 col-lg-4 plan-card" data-company="ShieldAuto Coverage" data-category="commercial">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="plan-header bg-success text-white">
+                            <h5 class="card-title mb-1">ShieldAuto Coverage</h5>
+                            <small>Luxury Commercial Coverage</small>
+                        </div>
+                        <div class="plan-body">
+                            <div class="plan-price">PKR 160,000<span class="text-muted">/year</span></div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-crown text-warning me-2"></i>Commercial Liability: PKR 4,000,000
+                                </li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Complete Cargo Insurance</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Loss of Business Coverage</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>On-Site Accident Protection</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>24/7 Commercial Assistance</li>
+                            </ul>
+                            <button class="btn btn-dark w-100">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 5 -->
+                <div class="col-md-6 col-lg-4 plan-card" data-company="DriveSure Protection"
+                    data-category="four-wheeler">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="plan-header bg-dark text-white">
+                            <h5 class="card-title mb-1">DriveSure Protection</h5>
+                            <small>Luxury Auto Elite</small>
+                        </div>
+                        <div class="plan-body">
+                            <div class="plan-price">PKR 155,000<span class="text-muted">/year</span></div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-crown text-warning me-2"></i>Liability: PKR 3,500,000</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>New Car Replacement (Up to 3 Years)
+                                </li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Accident + Damage All-Risk</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Luxury Hotel & Travel Support</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Elite Roadside Membership</li>
+                            </ul>
+                            <button class="btn btn-dark w-100">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 6 -->
+                <div class="col-md-6 col-lg-4 plan-card" data-company="MotorTrust Insurance" data-category="commercial">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="plan-header bg-warning text-white">
+                            <h5 class="card-title mb-1">MotorTrust Insurance</h5>
+                            <small>Luxury Fleet Coverage</small>
+                        </div>
+                        <div class="plan-body">
+                            <div class="plan-price">PKR 220,000<span class="text-muted">/year</span></div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-crown text-warning me-2"></i>Fleet Liability: PKR 5,000,000</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Advanced Telematics System</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Fuel Monitoring & Optimization</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Driver Performance Tracking</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Corporate Assistance Team</li>
+                            </ul>
+                            <button class="btn btn-dark w-100">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Plans 7–12 -->
+
+                <!-- Plan 7 -->
+                <div class="col-md-6 col-lg-4 plan-card d-none" data-company="SecureDrive Insurance"
+                    data-category="two-wheeler">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="plan-header bg-dark text-white">
+                            <h5 class="card-title mb-1">SecureDrive Insurance</h5>
+                            <small>Luxury Scooter Elite</small>
+                        </div>
+                        <div class="plan-body">
+                            <div class="plan-price">PKR 28,000<span class="text-muted">/year</span></div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-crown text-warning me-2"></i>Liability: PKR 300,000</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Theft + Extreme Damage Cover</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Vandalism & Weather Protection</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Helmet + Gear Replacement</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Priority Roadside Assistance</li>
+                            </ul>
+                            <button class="btn btn-dark w-100">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 8 -->
+                <div class="col-md-6 col-lg-4 plan-card d-none" data-company="AutoGuard Plus"
+                    data-category="commercial">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="plan-header bg-accent-orange text-white">
+                            <h5 class="card-title mb-1">AutoGuard Plus</h5>
+                            <small>Luxury Delivery Fleet</small>
+                        </div>
+                        <div class="plan-body">
+                            <div class="plan-price">PKR 110,000<span class="text-muted">/year</span></div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-crown text-warning me-2"></i>Liability: PKR 2,500,000</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Premium Cargo Insurance</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>GPS Telemetry Tracking</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Multi-Route Damage Protection</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Elite Delivery Support</li>
+                            </ul>
+                            <button class="btn btn-dark w-100">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 9 -->
+                <div class="col-md-6 col-lg-4 plan-card d-none" data-company="RoadSafe Insurance"
+                    data-category="four-wheeler">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="plan-header bg-dark text-white">
+                            <h5 class="card-title mb-1">RoadSafe Insurance</h5>
+                            <small>Luxury Eco Elite Coverage</small>
+                        </div>
+                        <div class="plan-body">
+                            <div class="plan-price">PKR 90,000<span class="text-muted">/year</span></div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-crown text-warning me-2"></i>Liability: PKR 1,800,000</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>EV Battery Full Replacement</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Charging Station Protection</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Eco Disaster Coverage</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Carbon Credit Rewards</li>
+                            </ul>
+                            <button class="btn btn-dark w-100">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 10 -->
+                <div class="col-md-6 col-lg-4 plan-card d-none" data-company="ShieldAuto Coverage"
+                    data-category="four-wheeler">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="plan-header bg-success text-white">
+                            <h5 class="card-title mb-1">ShieldAuto Coverage</h5>
+                            <small>Luxury Elite Premium</small>
+                        </div>
+                        <div class="plan-body">
+                            <div class="plan-price">PKR 300,000<span class="text-muted">/year</span></div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-crown text-warning me-2"></i>Liability: PKR 6,000,000</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Agreed Value Protection</li>
+                                </li><i class="fas fa-crown text-warning me-2"></i>OEM Luxury Parts Guarantee</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>On-Demand Concierge</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>International Coverage</li>
+                            </ul>
+                            <button class="btn btn-dark w-100">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 11 -->
+                <div class="col-md-6 col-lg-4 plan-card d-none" data-company="DriveSure Protection"
+                    data-category="two-wheeler">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="plan-header bg-dark text-white">
+                            <h5 class="card-title mb-1">DriveSure Protection</h5>
+                            <small>Luxury Sports Bike Coverage</small>
+                        </div>
+                        <div class="plan-body">
+                            <div class="plan-price">PKR 48,000<span class="text-muted">/year</span></div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-crown text-warning me-2"></i>Liability: PKR 900,000</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Elite Engine Protection</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Track Damage Insurance</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Custom Parts Replacement</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>High-Priority Assistance</li>
+                            </ul>
+                            <button class="btn btn-dark w-100">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 12 -->
+                <div class="col-md-6 col-lg-4 plan-card d-none" data-company="MotorTrust Insurance"
+                    data-category="commercial">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="plan-header bg-warning text-white">
+                            <h5 class="card-title mb-1">MotorTrust Insurance</h5>
+                            <small>Luxury Construction Coverage</small>
+                        </div>
+                        <div class="plan-body">
+                            <div class="plan-price">PKR 320,000<span class="text-muted">/year</span></div>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-crown text-warning me-2"></i>Liability: PKR 7,000,000</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Machinery Full Replacement</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Project Site All-Risk Cover</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Worker Medical Protection</li>
+                                <li><i class="fas fa-crown text-warning me-2"></i>Emergency Site Response Team</li>
+                            </ul>
+                            <button class="btn btn-dark w-100">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- View More Button -->
+                <div class="text-center mt-5">
+                    <button id="viewMoreBtn" class="btn btn-lg">
+                        <i class="fas fa-plus me-2"></i>
+                        View More Plans
+                    </button>
+                </div>
+            </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Why Compare with Safe Carz?</h2>
+                    <p class="lead text-muted">We make it easy to find the perfect insurance plan for your needs.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fas fa-search fa-2x"></i>
+                            </div>
+                            <h4 class="card-title">Compare Multiple Quotes</h4>
+                            <p class="card-text">Get quotes from multiple top-rated insurance companies in one place.
+                                Save time and find the best deal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fas fa-dollar-sign fa-2x"></i>
+                            </div>
+                            <h4 class="card-title">Save Money</h4>
+                            <p class="card-text">Our customers save an average of $500 per year by comparing plans and
+                                finding the most competitive rates.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fas fa-user-shield fa-2x"></i>
+                            </div>
+                            <h4 class="card-title">Expert Guidance</h4>
+                            <p class="card-text">Our insurance experts are here to help you understand your options and
+                                choose the right coverage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-shield-alt me-2"></i>Safe Carz Limited</h5>
+                    <p>Your trusted partner for comprehensive car insurance solutions. Protecting your journey with
+                        confidence and care.</p>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="plans.html">Insurance Plans</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-phone me-2"></i>1-800-SAFE-CAR</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@safecarz.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>JF Plaza, Block D North Nazimabad, Karachi PK, 74600
+                    </p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Safe Carz Limited. All rights reserved. | Designed with ❤️ for your safety</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

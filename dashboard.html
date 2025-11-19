@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Safe Carz Limited</title>
+    <meta name="description"
+        content="Manage your car insurance policies, view documents, make payments, and access customer support through your Safe Carz Limited dashboard.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+        <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <div class="loader"></div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <!-- Logo and Brand -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="brand-logo">
+                    <img src="img/logo-Photoroom.png" alt="Safe Carz Limited Logo">
+                </div>
+                <span class="brand-name ms-2">
+                    Safe Carz Limited
+                </span>
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="basic-coverage.html">Basic Coverage</a></li>
+                            <li><a class="dropdown-item" href="premium-coverage.html">Premium Coverage</a></li>
+                            <li><a class="dropdown-item" href="luxury-coverage.html">Luxury Coverage</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn-login btn-primary" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="bg-primary-olive text-white py-4 mt-5">
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="mb-3">Welcome to Your Dashboard</h1>
+                    <p class="card-text mb-0">Manage your policies and access your account information.</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <span class="text-white-50 small">Logged in as: <span id="userEmail">user@safecarz.com</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Stats -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="bg-accent-terracotta rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <i class="fas fa-file-contract fa-xl"></i>
+                            </div>
+                            <h3 class="card-title mb-1">3</h3>
+                            <p class="card-text mb-0">Active Policies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <i class="fas fa-check-circle text-success fa-xl"></i>
+                            </div>
+                            <h3 class="text-success mb-1">2</h3>
+                            <p class="card-text mb-0">Claims This Year</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="bg-warning bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <i class="fas fa-exclamation-triangle text-warning fa-xl"></i>
+                            </div>
+                            <h3 class="text-warning mb-1">1</h3>
+                            <p class="card-text mb-0">Renewals Due</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="bg-accent-terracotta bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                style="width: 60px; height: 60px;">
+                                <i class="fas fa-dollar-sign fa-xl"></i>
+                            </div>
+                            <h3 class="card-title mb-1">PKR 24,500</h3>
+                            <p class="card-text mb-0">Monthly Premium</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-primary-olive mb-4">Quick Actions</h3>
+                    <div class="row g-3">
+                        <div class="col-md-3">
+                            <button class="btn btn-primary w-100 h-100 p-3" onclick="getQuote()">
+                                <i class="fas fa-calculator fa-2x mb-2"></i><br>
+                                <span>Get Quote</span>
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-primary w-100 h-100 p-3" onclick="fileClaim()">
+                                <i class="fas fa-file-medical fa-2x mb-2"></i><br>
+                                <span>File Claim</span>
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-primary w-100 h-100 p-3" onclick="makePayment()">
+                                <i class="fas fa-credit-card fa-2x mb-2"></i><br>
+                                <span>Make Payment</span>
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-primary w-100 h-100 p-3" onclick="contactSupport()">
+                                <i class="fas fa-headset fa-2x mb-2"></i><br>
+                                <span>Contact Support</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policies Section -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h3 class="card-title mb-0">Your Insurance Policies</h3>
+                        <button class="btn btn-primary"
+                            onclick="showNotification('Add Policy feature coming soon!', 'info')">
+                            <i class="fas fa-plus me-2"></i>Add Policy
+                        </button>
+                    </div>
+
+                    <div class="row g-4" id="policiesContainer" role="region" aria-label="Insurance Policies">
+                        <!-- Policies will be loaded here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Activity -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="text-primary-olive mb-4">Recent Activity</h3>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-0">
+                            <div class="list-group list-group-flush">
+                                <div class="list-group-item d-flex align-items-center p-3">
+                                    <div class="bg-success bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3"
+                                        style="width: 40px; height: 40px;">
+                                        <i class="fas fa-check text-success"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Payment Processed</h6>
+                                        <p class="mb-0 text-muted small">Monthly premium of $400 paid successfully</p>
+                                    </div>
+                                    <span class="text-muted small">2 hours ago</span>
+                                </div>
+                                <div class="list-group-item d-flex align-items-center p-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                        style="width: 40px; height: 40px;">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Policy Document Updated</h6>
+                                        <p class="mb-0 text-muted small">New insurance cards available for download</p>
+                                    </div>
+                                    <span class="text-muted small">1 day ago</span>
+                                </div>
+                                <div class="list-group-item d-flex align-items-center p-3">
+                                    <div class="bg-warning bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3"
+                                        style="width: 40px; height: 40px;">
+                                        <i class="fas fa-exclamation-triangle text-warning"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Renewal Reminder</h6>
+                                        <p class="mb-0 text-muted small">Policy SCZ-2023-015 expires in 30 days</p>
+                                    </div>
+                                    <span class="text-muted small">3 days ago</span>
+                                </div>
+                                <div class="list-group-item d-flex align-items-center p-3">
+                                    <div class="bg-success bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3"
+                                        style="width: 40px; height: 40px;">
+                                        <i class="fas fa-check text-success"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Claim Settled</h6>
+                                        <p class="mb-0 text-muted small">Claim SCZ-CL-2024-001 has been approved and
+                                            processed</p>
+                                    </div>
+                                    <span class="text-muted small">1 week ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <h3 class=" mb-4">Upcoming Renewals</h3>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-warning bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 50px; height: 50px;">
+                                    <i class="fas fa-calendar-alt text-warning"></i>
+                                </div>
+                                <div>
+                                    <h6 class="card-title mb-1">Ford F-150</h6>
+                                    <p class="mb-0 card-text small">Policy SCZ-2023-015</p>
+                                </div>
+                            </div>
+                            <div class="row g-2 mb-3">
+                                <div class="col-6">
+                                    <span class="card-text small">Expires:</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="text-warning fw-bold">Oct 30, 2024</span>
+                                </div>
+                                <div class="col-6">
+                                    <span class="card-text small">Current Premium:</span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <span class="fw-bold">$2,800/year</span>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-warning" onclick="renewPolicy('SCZ-2023-015')">
+                                    <i class="fas fa-sync-alt me-2"></i>Renew Now
+                                </button>
+                                <button class="btn btn-outline bg-accent-terracotta" onclick="viewPolicyDetails('SCZ-2023-015')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h3 class="card-title mb-0">Important Documents</h3>
+                        <button class="btn btn-outline"
+                            onclick="showNotification('Upload Document feature coming soon!', 'info')">
+                            <i class="fas fa-upload me-2"></i>Upload Document
+                        </button>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center">
+                                    <div class=" rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="fas fa-id-card fa-xl"></i>
+                                    </div>
+                                    <h6 class="card-title">Insurance Cards</h6>
+                                    <p class="card-text small">Download your current insurance cards</p>
+                                    <button class="btn btn-primary btn-sm"
+                                        onclick="showNotification('Download feature coming soon!', 'info')">
+                                        <i class="fas fa-download me-1"></i>Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center">
+                                    <div class=" bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="fas fa-file-contract text-success fa-xl"></i>
+                                    </div>
+                                    <h6 class="card-title">Policy Documents</h6>
+                                    <p class="card-text small ">Access your complete policy documents</p>
+                                    <button class="btn btn-primary btn-sm"
+                                        onclick="showNotification('Download feature coming soon!', 'info')">
+                                        <i class="fas fa-download me-1"></i>Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center">
+                                    <div class=" bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="fas fa-receipt text-warning fa-xl"></i>
+                                    </div>
+                                    <h6 class="card-title">Payment Receipts</h6>
+                                    <p class="card-text small">View and download payment receipts</p>
+                                    <button class="btn btn-primary btn-sm"
+                                        onclick="showNotification('Download feature coming soon!', 'info')">
+                                        <i class="fas fa-download me-1"></i>Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center">
+                                    <div class=" bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                        style="width: 60px; height: 60px;">
+                                        <i class="fas fa-file-invoice  fa-xl"></i>
+                                    </div>
+                                    <h6 class="card-title">Tax Documents</h6>
+                                    <p class="card-text small ">Access tax-related insurance documents</p>
+                                    <button class="btn btn-primary btn-sm"
+                                        onclick="showNotification('Download feature coming soon!', 'info')">
+                                        <i class="fas fa-download me-1"></i>Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-shield-alt me-2"></i>Safe Carz Limited</h5>
+                    <p>Your trusted partner for comprehensive car insurance solutions. Protecting your journey with
+                        confidence and care.</p>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="plans.html">Insurance Plans</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-phone me-2"></i>1-800-SAFE-CAR</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@safecarz.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>JF Plaza, Block D North Nazimabad, Karachi PK, 74600</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Safe Carz Limited. All rights reserved. | Designed with ❤️ for your safety</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

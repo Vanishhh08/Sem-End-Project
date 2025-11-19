@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Safe Carz Limited</title>
+    <meta name="description"
+        content="Login to your Safe Carz Limited account to manage your insurance policies, view documents, and access customer support.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+        <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+<body>
+    <div class="loader"></div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <!-- Logo and Brand -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="brand-logo">
+                    <img src="img/logo-Photoroom.png" alt="Safe Carz Limited Logo">
+                </div>
+                <span class="brand-name ms-2">
+                    Safe Carz Limited
+                </span>
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="basic-coverage.html">Basic Coverage</a></li>
+                            <li><a class="dropdown-item" href="premium-coverage.html">Premium Coverage</a></li>
+                            <li><a class="dropdown-item" href="luxury-coverage.html">Luxury Coverage</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn-login btn-primary active" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="py-5 mt-5 bg-light">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <!-- Logo and Welcome -->
+                            <div class="text-center mb-4">
+                                <div class=" rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                    style="width: 80px; height: 80px;">
+                                    <i class="fas fa-user-shield fa-2x"></i>
+                                </div>
+                                <h2 class="card-title mb-2">Welcome Back</h2>
+                                <p class="card-text">Sign in to your account</p>
+                            </div>
+
+                            <!-- Login Form -->
+                            <form id="loginForm">
+                                <div class="mb-4">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0">
+                                            <i class="fas fa-envelope text-muted"></i>
+                                        </span>
+                                <input type="email" class="form-control border-start-0" id="email" name="email"
+                                            placeholder="Enter your email" required aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="password" class="form-label">Password</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0">
+                                            <i class="fas fa-lock text-muted"></i>
+                                        </span>
+                                        <input type="password" class="form-control border-start-0 border-end-0"
+                                            id="password" name="password" placeholder="Enter your password" required aria-describedby="passwordHelp">
+                                        <button class="input-group-text  border-start-0" type="button"
+                                            id="togglePassword" aria-label="Toggle password visibility">
+                                            <i class="fas fa-eye text-muted"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="rememberMe"
+                                                name="rememberMe">
+                                            <label class="form-check-label" for="rememberMe">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                        <a href="#" class="card-title text-decoration-none">Forgot password?</a>
+                                    </div>
+                                </div>
+
+                                <div class="d-grid mb-4">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-sign-in-alt me-2"></i>Sign In
+                                    </button>
+                                </div>
+
+                                <div class="text-center">
+                                    <p class="card-text mb-0">
+                                        Don't have an account?
+                                        <a href="sign-up.html" class="card-title text-decoration-none">Sign up here.</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Alternative Login Options -->
+                    <div class="text-center mt-4">
+                        <p class="text-muted mb-3">Or sign in with</p>
+                        <div class="d-flex gap-2 justify-content-center">
+                            <button class="btn btn-outline-danger" type="button">
+                                <i class="fab fa-google me-2"></i>Google
+                            </button>
+                            <button class="btn btn-outline-primary" type="button">
+                                <i class="fab fa-facebook-f me-2"></i>Facebook
+                            </button>
+                            <button class="btn btn-outline-dark" type="button">
+                                <i class="fab fa-apple me-2"></i>Apple
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Why Create an Account?</h2>
+                    <p class="lead text-muted">Manage your insurance policies and access exclusive features with your
+                        Safe Carz Limited account.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fas fa-file-alt fa-2x"></i>
+                            </div>
+                            <h4 class="card-title">Policy Management</h4>
+                            <p class="card-text">View your policies, download documents, and make changes to your
+                                coverage anytime, anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fas fa-credit-card fa-2x"></i>
+                            </div>
+                            <h4 class="card-title">Easy Payments</h4>
+                            <p class="card-text">Pay your premiums online, set up automatic payments, and view your
+                                payment history with ease.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                style="width: 80px; height: 80px;">
+                                <i class="fas fa-headset fa-2x"></i>
+                            </div>
+                            <h4 class="card-title">24/7 Support</h4>
+                            <p class="card-text">Access customer support, file claims, and get assistance whenever you
+                                need it through your account.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Notice -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 text-center">
+                                    <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center"
+                                        style="width: 80px; height: 80px;">
+                                        <i class="fas fa-shield-alt text-success fa-2x"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <h4 class="text-success mb-2">Your Security is Our Priority</h4>
+                                    <p class="card-text mb-0">We use industry-standard encryption and security measures
+                                        to protect your personal information. Your data is safe with us and will never
+                                        be shared with third parties without your consent.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-shield-alt me-2"></i>Safe Carz Limited</h5>
+                    <p>Your trusted partner for comprehensive car insurance solutions. Protecting your journey with
+                        confidence and care.</p>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="plans.html">Insurance Plans</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-phone me-2"></i>1-800-SAFE-CAR</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@safecarz.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>JF Plaza, Block D North Nazimabad, Karachi PK, 74600</p>
+                </div>
+                <div class="social-icons mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Safe Carz Limited. All rights reserved. | Designed with ❤️ for your safety</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Password toggle functionality
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            const passwordInput = document.getElementById('password');
+            const icon = this.querySelector('i');
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

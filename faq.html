@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Safe Carz Limited</title>
+    <meta name="description"
+        content="Find answers to frequently asked questions about car insurance, policies, claims, and more from Safe Carz Limited.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+        <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <div class="loader"></div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <!-- Logo and Brand -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="brand-logo">
+                    <img src="img/logo-Photoroom.png" alt="Safe Carz Limited Logo">
+                </div>
+                <span class="brand-name ms-2">
+                    Safe Carz Limited
+                </span>
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="basic-coverage.html">Basic Coverage</a></li>
+                            <li><a class="dropdown-item" href="premium-coverage.html">Premium Coverage</a></li>
+                            <li><a class="dropdown-item" href="luxury-coverage.html">Luxury Coverage</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn-login btn-primary" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="faq-header-section py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">Frequently Asked Questions</h1>
+                    <p class="lead">Find answers to common questions about car insurance, policies, claims, and our
+                        services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- General Insurance Questions -->
+                    <div class="mb-5">
+                        <h3 class="text-primary-olive mb-4">
+                            <i class="fas fa-question-circle me-2"></i>General Insurance Questions
+                        </h3>
+                        <div class="accordion" id="generalFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#general1">
+                                        What types of car insurance coverage are available?
+                                    </button>
+                                </h2>
+                                <div id="general1" class="accordion-collapse collapse show"
+                                    data-bs-parent="#generalFAQ">
+                                    <div class="accordion-body">
+                                        We offer several types of coverage including liability coverage, collision
+                                        coverage, comprehensive coverage, personal injury protection,
+                                        uninsured/underinsured motorist coverage, and roadside assistance. Each type
+                                        serves a different purpose and can be customized based on your needs and budget.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#general2">
+                                        How much car insurance do I need?
+                                    </button>
+                                </h2>
+                                <div id="general2" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                    <div class="accordion-body">
+                                        The amount of insurance you need depends on several factors including your
+                                        state's minimum requirements, the value of your vehicle, your personal assets,
+                                        and your risk tolerance. We recommend liability limits of at least 100/300/100
+                                        ($100,000 per person, $300,000 per accident, $100,000 property damage) for
+                                        adequate protection.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#general3">
+                                        What factors affect my car insurance rates?
+                                    </button>
+                                </h2>
+                                <div id="general3" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                    <div class="accordion-body">
+                                        Your insurance rates are determined by multiple factors including your driving
+                                        record, age, location, type of vehicle, coverage limits, deductible amount,
+                                        credit score (in most states), annual mileage, and previous insurance history.
+                                        Safe drivers with good credit typically pay lower premiums.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#general4">
+                                        Can I get insurance if I have a bad driving record?
+                                    </button>
+                                </h2>
+                                <div id="general4" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                    <div class="accordion-body">
+                                        Yes, we work with multiple insurance companies that specialize in high-risk
+                                        drivers. While your rates may be higher initially, we can help you find
+                                        affordable options and provide guidance on how to improve your record over time
+                                        to qualify for better rates.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Getting a Quote -->
+                    <div class="mb-5">
+                        <h3 class="mb-4">
+                            <i class="fas fa-calculator me-2"></i>Getting a Quote
+                        </h3>
+                        <div class="accordion" id="quoteFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#quote1">
+                                        How long does it take to get a quote?
+                                    </button>
+                                </h2>
+                                <div id="quote1" class="accordion-collapse collapse" data-bs-parent="#quoteFAQ">
+                                    <div class="accordion-body">
+                                        Online quotes typically take 2-3 minutes for standard policies. For more complex
+                                        situations or commercial insurance, it may take 24-48 hours. Our agents can
+                                        provide instant quotes over the phone for most personal auto policies.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#quote2">
+                                        What information do I need for a quote?
+                                    </button>
+                                </h2>
+                                <div id="quote2" class="accordion-collapse collapse" data-bs-parent="#quoteFAQ">
+                                    <div class="accordion-body">
+                                        You'll need basic information including your driver's license, vehicle details
+                                        (VIN, make, model, year), current insurance information, driving history, and
+                                        details about other drivers in your household. For the most accurate quote, have
+                                        your current policy declarations page available.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#quote3">
+                                        Is the quote binding?
+                                    </button>
+                                </h2>
+                                <div id="quote3" class="accordion-collapse collapse" data-bs-parent="#quoteFAQ">
+                                    <div class="accordion-body">
+                                        No, quotes are estimates based on the information provided. The final premium
+                                        may vary after the insurance company verifies your information and runs reports.
+                                        However, we strive to provide accurate quotes that closely match your final
+                                        premium.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Claims Process -->
+                    <div class="mb-5">
+                        <h3 class="mb-4">
+                            <i class="fas fa-file-alt me-2"></i>Claims Process
+                        </h3>
+                        <div class="accordion" id="claimsFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#claims1">
+                                        How do I file a claim?
+                                    </button>
+                                </h2>
+                                <div id="claims1" class="accordion-collapse collapse" data-bs-parent="#claimsFAQ">
+                                    <div class="accordion-body">
+                                        You can file a claim 24/7 through our online portal, mobile app, or by calling
+                                        our claims hotline at 1-800-SAFE-CAR. Have your policy number, incident details,
+                                        and photos of the damage ready. We'll guide you through the entire process and
+                                        assign a claims adjuster to your case.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#claims2">
+                                        How long does the claims process take?
+                                    </button>
+                                </h2>
+                                <div id="claims2" class="accordion-collapse collapse" data-bs-parent="#claimsFAQ">
+                                    <div class="accordion-body">
+                                        Simple claims can be processed within 24-48 hours, while complex claims may take
+                                        7-10 business days. We'll keep you informed throughout the process and work to
+                                        resolve your claim as quickly as possible. Emergency repairs can often be
+                                        authorized immediately.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#claims3">
+                                        Will my rates increase after a claim?
+                                    </button>
+                                </h2>
+                                <div id="claims3" class="accordion-collapse collapse" data-bs-parent="#claimsFAQ">
+                                    <div class="accordion-body">
+                                        Not necessarily. Rate increases depend on the circumstances of the claim, your
+                                        claims history, and your overall driving record. Some companies offer accident
+                                        forgiveness for your first claim. We'll work with you to minimize any potential
+                                        rate increases.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#claims4">
+                                        Can I choose my own repair shop?
+                                    </button>
+                                </h2>
+                                <div id="claims4" class="accordion-collapse collapse" data-bs-parent="#claimsFAQ">
+                                    <div class="accordion-body">
+                                        Yes, you have the right to choose any licensed repair shop. We also have a
+                                        network of preferred shops that offer guaranteed repairs and direct billing,
+                                        which can expedite the process. We'll work with whichever shop you choose.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Policy Management -->
+                    <div class="mb-5">
+                        <h3 class="mb-4">
+                            <i class="fas fa-cog me-2"></i>Policy Management
+                        </h3>
+                        <div class="accordion" id="policyFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#policy1">
+                                        Can I make changes to my policy?
+                                    </button>
+                                </h2>
+                                <div id="policy1" class="accordion-collapse collapse" data-bs-parent="#policyFAQ">
+                                    <div class="accordion-body">
+                                        Yes, you can make changes to your policy anytime by contacting our customer
+                                        service team or through your online account. Common changes include
+                                        adding/removing vehicles, adjusting coverage limits, changing deductibles, or
+                                        updating personal information.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#policy2">
+                                        How do I cancel my policy?
+                                    </button>
+                                </h2>
+                                <div id="policy2" class="accordion-collapse collapse" data-bs-parent="#policyFAQ">
+                                    <div class="accordion-body">
+                                        You can cancel your policy by calling our customer service team. We'll need the
+                                        effective date of cancellation and information about your new insurance if
+                                        applicable. Any unused premium will be refunded to you according to the terms of
+                                        your policy.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#policy3">
+                                        When will I receive my insurance cards?
+                                    </button>
+                                </h2>
+                                <div id="policy3" class="accordion-collapse collapse" data-bs-parent="#policyFAQ">
+                                    <div class="accordion-body">
+                                        Digital insurance cards are available immediately in our mobile app and online
+                                        portal. Physical cards are typically mailed within 5-7 business days of policy
+                                        activation. You can also print temporary cards from your online account.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Billing and Payments -->
+                    <div class="mb-5">
+                        <h3 class="mb-4">
+                            <i class="fas fa-credit-card me-2"></i>Billing and Payments
+                        </h3>
+                        <div class="accordion" id="billingFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#billing1">
+                                        What payment options are available?
+                                    </button>
+                                </h2>
+                                <div id="billing1" class="accordion-collapse collapse" data-bs-parent="#billingFAQ">
+                                    <div class="accordion-body">
+                                        We offer multiple payment options including monthly, quarterly, semi-annual, and
+                                        annual payments. You can pay online, by phone, by mail, or through automatic
+                                        bank draft. Most major credit cards and electronic checks are accepted.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#billing2">
+                                        Is there a discount for paying in full?
+                                    </button>
+                                </h2>
+                                <div id="billing2" class="accordion-collapse collapse" data-bs-parent="#billingFAQ">
+                                    <div class="accordion-body">
+                                        Yes, most insurance companies offer a discount for paying your annual premium in
+                                        full. The discount typically ranges from 5-10% and also saves you from monthly
+                                        service fees that may apply to installment payments.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#billing3">
+                                        What happens if I miss a payment?
+                                    </button>
+                                </h2>
+                                <div id="billing3" class="accordion-collapse collapse" data-bs-parent="#billingFAQ">
+                                    <div class="accordion-body">
+                                        If you miss a payment, contact us immediately. Most companies offer a grace
+                                        period, but if payment isn't received, your policy may be canceled. We'll work
+                                        with you to restore coverage and avoid any gaps in insurance.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Discounts and Savings -->
+                    <div class="mb-5">
+                        <h3 class="mb-4">
+                            <i class="fas fa-tags me-2"></i>Discounts and Savings
+                        </h3>
+                        <div class="accordion" id="discountsFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#discounts1">
+                                        What discounts are available?
+                                    </button>
+                                </h2>
+                                <div id="discounts1" class="accordion-collapse collapse" data-bs-parent="#discountsFAQ">
+                                    <div class="accordion-body">
+                                        We offer numerous discounts including safe driver, multi-policy, multi-vehicle,
+                                        good student, anti-theft devices, defensive driving courses, low mileage, and
+                                        more. We'll automatically check for all available discounts when providing your
+                                        quote.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#discounts2">
+                                        How can I lower my insurance rates?
+                                    </button>
+                                </h2>
+                                <div id="discounts2" class="accordion-collapse collapse" data-bs-parent="#discountsFAQ">
+                                    <div class="accordion-body">
+                                        Maintain a clean driving record, consider increasing your deductibles, bundle
+                                        multiple policies, take defensive driving courses, install safety features in
+                                        your vehicle, and review your coverage annually. We can help identify additional
+                                        savings opportunities.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Need Help -->
+    <section class="py-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Still Have Questions?</h2>
+                    <p class="lead text-muted mb-4">Our expert team is here to help you with any questions or concerns
+                        you may have.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-phone me-2"></i>Contact Us
+                        </a>
+                        <a href="tel:1-800-SAFE-CAR" class="btn btn-outline btn-lg">
+                            <i class="fas fa-headset me-2"></i>Call 1-800-SAFE-CAR
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-shield-alt me-2"></i>Safe Carz Limited</h5>
+                    <p>Your trusted partner for comprehensive car insurance solutions. Protecting your journey with
+                        confidence and care.</p>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="plans.html">Insurance Plans</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-phone me-2"></i>1-800-SAFE-CAR</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@safecarz.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>JF Plaza, Block D North Nazimabad, Karachi PK, 74600</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Safe Carz Limited. All rights reserved. | Designed with ❤️ for your safety</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+
+    
+</body>
+
+</html>
