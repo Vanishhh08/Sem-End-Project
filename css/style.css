@@ -431,7 +431,7 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-olive) 0%, var(--primary-olive-light) 100%);
+    /* background: linear-gradient(135deg, var(--primary-olive) 0%, var(--primary-olive-light) 100%); */
     color: var(--white);
     padding: 8rem 0 6rem;
     position: relative;
