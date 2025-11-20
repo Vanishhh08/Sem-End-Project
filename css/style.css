@@ -1460,7 +1460,7 @@ body.dark .plan-header small { color: rgba(255,255,255,0.85); }
 }
 /* about us section */
 .about-header-section{
-    background-image: url('/img/about-header.jpg');
+    background-image: url('../img/about-header.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
